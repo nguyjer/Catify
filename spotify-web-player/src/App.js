@@ -17,7 +17,11 @@ function App() {
     getToken();
   }, []);
 
-  return <>{token === "" ? <Login /> : <WebPlayback token={token} />}</>;
+  return (
+    <>
+      {token === "" ? <Login /> : <WebPlayback token={token} />}
+    </>
+  );
 }
 
 

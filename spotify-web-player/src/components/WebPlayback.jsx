@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import popCat from "../assets/pixil-frame-0.png"
+import hipHopCat from "../assets/pixil-frame-0 4.png";
+import edmCat from "../assets/edmcat.png";
+
 
 const track = {
   name: "",
@@ -23,7 +27,7 @@ function WebPlayback(props) {
 
     window.onSpotifyWebPlaybackSDKReady = () => {
       const player = new window.Spotify.Player({
-        name: "Web Playback SDK",
+        name: "catify",
         getOAuthToken: (cb) => {
           cb(props.token);
         },
@@ -119,6 +123,9 @@ function WebPlayback(props) {
             </div>
           </div>
         </div>
+        <img src={popCat} alt="my-popCat" className="cat" />
+        <img src={hipHopCat} alt="my-hipHopCat" className="cat" />
+        <img src={edmCat} alt="my-edmCat" className="cat" />
       </>
     );
   }

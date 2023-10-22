@@ -3,15 +3,27 @@
 }
 
 * {
-  background-color: #e1c4ff;
+  background-color: #e7c3ff;
 }
 
 .spotify-play {
   margin-top: 25vh;
   padding: 10px;
   border: 10px;
-  
 }
+
+.cat {
+  width: 8vh;
+  height: auto;
+}
+
+.landing-gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    margin-bottom: auto;
+  }
 
 .drip {
   background-color: #bbb6b6;
@@ -19,7 +31,7 @@
   height: 43vh
 }
 
-.btn-spotify {
+.helpm.btn-spotify {
   padding: 0;
   border: 0px;
   margin: 0;
@@ -37,12 +49,13 @@
 }
 
 .App-header {
-  background-color: #e1c4ff;
+  /* background-color: #e1c4ff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  margin-top: 3vh;
   font-size: calc(10px + 2vmin);
   color: black;
 }
